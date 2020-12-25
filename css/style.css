@@ -66,6 +66,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.6px;
   color: var(--text-color);
+  background-color: #fff;
 }
 
 .container {
@@ -75,10 +76,11 @@ body {
 }
 
 .title {
+  position: relative;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 1.2;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--title-color);
@@ -87,8 +89,9 @@ body {
 .title::after {
   content: "/";
   position: absolute;
-  transform: translateY(40%);
-  color: #0D302C;
+  font-size: 72px;
+  transform: translateY(3%);
+  color: #00B2A0;
 }
 
 /* COMMON */
@@ -103,21 +106,29 @@ body {
 }
 
 .header__inner {
+  position: relative;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  min-height: 100vh;
-}
-
-.header__top {
-  padding-top: 35px;
+  padding: 35px 0px 92px;
 }
 
 .header__nav {
+  height: 63px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  position: absolute;
+  width: 60px;
+  height: 63px;
+  left: 0;
+  top: 35px;
 }
 
 .menu {
@@ -132,7 +143,6 @@ body {
 .menu__link {
   padding-bottom: 10px;
   font-size: 24px;
-  line-height: 1.1;
   color: #ffffff;
   border-bottom: 1px solid transparent;
   transition: color, border-bottom, 0.3s;
@@ -144,20 +154,25 @@ body {
 }
 
 .header__title {
-  /* margin-bottom: 315px; */
   font-size: 24px;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .header__title span {
   display: block;
   font-family: 'Raleway', sans-serif;
   font-size: 200px;
-  line-height: 235px;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
   font-weight: 700;
+  text-transform: uppercase;
   color: #0D302C; 
+}
+
+.header__link {
+  width: 20px;
+  height: 69px;
+  margin-top: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* HEADER */
@@ -165,26 +180,22 @@ body {
 /* ABOUT */
 
 .about {
-  padding: 189px 0px 199px;
-}
-
-.about__inner {
-  display: flex;
-  flex-flow: column;
+  padding: 189px 0px 163px;
 }
 
 .about__title {
-  margin-bottom: 100px;
-  width: 100%;
+  margin-bottom: 96px;
 }
 
 .about__text {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .about__text p {
-  width: 480px;
-  margin: 0px 120px 30px 0px;
+  max-width: 480px;
+  margin-bottom: 30px;
+  margin-right: 120px;
 }
 
 /* ABOUT */
@@ -197,7 +208,7 @@ body {
 }
 
 .advantages__title {
-  margin-bottom: 100px;
+  margin-bottom: 95px;
 }
 
 .advantages__items {
@@ -210,28 +221,43 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 350px;
-  letter-spacing: 0.6px;
+  align-items: center;
+  max-width: 350px;
   color: var(--text-color);
 }
-.advantages__wrapper {
+
+.advantages__item-title {
   display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
+  position: relative;
+  max-width: 210px;
+  height: 100%;
+  padding-left: 60px;
+  margin-bottom: 10px; 
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
-.adventages__img {
+
+.advantages__item-title::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 7px;
   width: 50px;
   height: 50px;
 }
 
-.advantages__item-title {
-  width: 150px;
-  padding-left: 10px; 
-  align-self: center;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 400;
-  text-transform: uppercase;
+.advantages__item-title--waves::before {
+  background-image: url(../images/waves-icon.svg);
+}
+
+.advantages__item-title--airplane::before {
+  background-image: url(../images/airplane-icon.svg);
+}
+
+.advantages__item-title--serfer::before {
+  background-image: url(../images/serfer-icon.svg);
 }
 
 .advantages__inner {
@@ -245,28 +271,29 @@ body {
 }
 
 .advantages__stat-item {
-  padding-bottom: 10px;
+  margin-bottom: 25px;
   position: relative;
+  top: 20px;
 }
 
 .advantages__stat-item span {
   display: block;
   position: absolute;
-  right: 0;
   top: -15px;
+  text-align: right;
   font-size: 24px;
-  line-height: 18px;
+  line-height: 1;
   font-weight: 400;
-  letter-spacing: 0.6px;
 }
 
 .advantages__stat-item span::before {
   content: "";
   position: absolute;
-  width: 293px;
+  width: 85%;
   left: 0;
   height: 15px;
   background-image: url('../images/wave-line-logo.svg');
+  background-size: cover;
 }
 
 .advantages__info {
@@ -279,30 +306,30 @@ body {
 
 /* ADVANTAGES */
 
-/* SLOGAN */
+/* CONQUER */
 
-.slogan {
-  /* padding-bottom: 200px; */
-  background-image: url('../images/slogan-bg.png');
+.conquer { 
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: right 100%;
-  height: 100%;
+  background-position: right;
 }
 
-.slogan__inner {
-  max-width: 507px;
+.conquer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 850px;
+  max-width: 511px;
   margin-right: auto;
-  padding-top: 200px;
+  margin-bottom: 200px;
 }
 
-.slogan__inner p {
+.conquer__inner p {
   margin-bottom: 30px;
 }
 
-.slogan__title {
-  padding-top: 200px;
+.conquer__title {
   margin-bottom: 100px;
 }
 
-/* SLOGAN */
+/* CONQUER */
