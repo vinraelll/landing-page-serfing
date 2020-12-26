@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -58,7 +59,7 @@
           <span>wawe</span>
           Школа серфинга на Канарских островах
         </h1>
-        <a class="header__link" style="background-image: url('../images/header-img.svg')" href="#"></a>
+        <a class="header__link" style="background-image: url('images/header-img.svg')" href="#"></a>
       </div>
     </div>
   </header>
@@ -196,7 +197,7 @@
       </div>
     </section>
 
-    <section class="conquer" style="background-image: url('../images/conquer-bg.png')">
+    <section class="conquer" style="background-image: url('images/conquer-bg.png')">
       <div class="container">
         <div class="conquer__inner">
           <h2 class="conquer__title title">
@@ -238,41 +239,41 @@
           галерея
         </h2>
         <div class="gallery__filter">
-          <button class="gallery__btn" data-filter="all">
+          <button class="gallery__btn" data-filter="all" id="filter-all">
             все
           </button>
-          <button class="gallery__btn" data-filter=".category-1">
+          <button class="gallery__btn" data-filter=".tourists" id="filter-tourists">
             туристы
           </button>
-          <button class="gallery__btn" data-filter=".category-2">
+          <button class="gallery__btn" data-filter=".nature">
             Природа
           </button>
-          <button class="gallery__btn" data-filter=".category-3">
+          <button class="gallery__btn" data-filter=".profile">
             профиль
           </button>
         </div>
         <div class="gallery__inner">
-          <div class="gallery__item mix category-2">
+          <div class="gallery__item mix nature">
             <img class="gallery__img" src="images/gallery/gallery-waves.png" alt="Фото волн">
             <a class="gallery__link" href="#"></a>
           </div>
-          <div class="gallery__item mix category-1">
+          <div class="gallery__item mix tourists">
             <img class="gallery__img" src="images/gallery/gallery-kid.png" alt="Ребенок на пляже">
             <a class="gallery__link" href="#"></a>
           </div>
-          <div class="gallery__item gallery__item--no-margin-right mix category-1">
+          <div class="gallery__item gallery__item--no-margin-right mix tourists" id="serfer">
             <img class="gallery__img " src="images/gallery/gallery-serfer.png" alt="Серфер на пляже">
             <a class="gallery__link" href="#"></a>
           </div>
-          <div class="gallery__item mix category-1">
+          <div class="gallery__item mix tourists">
             <img class="gallery__img" src="images/gallery/gallery-girls.png" alt="Женщины на пляже">
             <a class="gallery__link" href="#"></a>
           </div>
-          <div class="gallery__item mix category-3">
+          <div class="gallery__item mix profile">
             <img class="gallery__img" src="images/gallery/gallery-inside-wave.png" alt="Фото внутри волны">
             <a class="gallery__link" href="#"></a>
           </div>
-          <div class="gallery__item gallery__item--no-margin-right mix category-3">
+          <div class="gallery__item gallery__item--no-margin-right mix profile">
             <img class="gallery__img " src="images/gallery/gallery-bitch.png"
               alt="Женщина с доской для серфинга на пляже">
             <a class="gallery__link" href="#"></a>
@@ -290,7 +291,7 @@
       </blockquote>
       <div class="container">
         <div class="video" style="background-image: url('images/video-bg.png')">
-          <a class="video__link" href="#"></a>
+          <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=e5Oib9wkZHs"></a>
         </div>
         <div class="statistics">
           <div class="statistics__item">
@@ -312,12 +313,12 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
