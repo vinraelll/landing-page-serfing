@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="top">
   <header class="header" style="background-image: url('images/header-bg.png')">
     <div class="container">
       <div class="header__inner">
@@ -460,7 +460,7 @@
 
     <section class="team" id="team">
       <div class="container">
-        <h2 class="team__title">
+        <h2 class="team__title title">
           наша команда
         </h2>
         <div class="team__items">
@@ -474,7 +474,7 @@
             </p>
           </div>
           <div class="team__item">
-            <img alt="Майк" src="images/team/mike.jpg">
+            <img alt="Майк" src="images/team/mary.jpg">
             <h4 class="team__name">
               Mary
             </h4>
@@ -483,7 +483,7 @@
             </p>
           </div>
           <div class="team__item">
-            <img alt="Майк" src="images/team/mike.jpg">
+            <img alt="Майк" src="images/team/olga.jpg">
             <h4 class="team__name">
               Ольга
             </h4>
@@ -495,9 +495,9 @@
       </div>
     </section>
 
-    <section class="services" id="price">
+    <section class="services">
       <div class="container">
-        <h2 class="services__title title">
+        <h2 class="services__title title" id="price">
           пакеты услуг
         </h2>
         <div class="services__items">
@@ -524,7 +524,7 @@
               Вечеринка с угощениями и дискотекой
             </li>
             <li class="services__price">
-              450<sup>$</sup>
+              450<span>$</span>
             </li>
           </ul>
           <ul class="services__item">
@@ -556,7 +556,7 @@
               Завтраки на вилле
             </li>
             <li class="services__price">
-              950<sup>$</sup>
+              950<span>$</span>
             </li>
           </ul>
           <ul class="services__item">
@@ -588,7 +588,7 @@
               Завтраки и ужины на вилле
             </li>
             <li class="services__price">
-              1450<sup>$</sup>
+              1450<span>$</span>
             </li>
           </ul>
         </div>
@@ -596,11 +596,20 @@
     </section>
 
     <section class="map">
-
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d684677.8644777949!2d32.806062479169405!3d47.90691879501058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dadfe03154ab7b%3A0xb0fa3a177d6b186e!2z0JrRgNC40LLQvtC5INCg0L7Qsywg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDUwMDAw!5e0!3m2!1sru!2sua!4v1609336357881!5m2!1sru!2sua"
+          width="100%" height="640" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0">
+        </iframe>
+      </div>
     </section>
 
     <section class="application" id="contacts">
       <div class="container">
+        <h3 class="application__title title">
+          Оставить заявку
+        </h3>
         <div class="application__inner">
           <form class="form">
             <input class="form__input" placeholder="Имя" type="text">
@@ -613,16 +622,16 @@
           </form>
           <div class="application__text">
             <p>
-              Есть вопрос?
+              Есть вопрос?<br>
               Вы можете связаться с нами:
             </p>
             <p>
-              WhatsApp, Viber, Telegram
+              WhatsApp, Viber, Telegram<br>
               +3 467 486-37-88
             </p>
             <p>
-              Avenida grandes playas 79,
-              Corralejo la Oliva Fuerteventura,
+              Avenida grandes playas 79,<br>
+              Corralejo la Oliva Fuerteventura,<br>
               Spain. 35660
             </p>
           </div>
@@ -642,11 +651,14 @@
     </section>
 
     <section class="footer">
-
+      <a class="footer__logo" href="#top">
+        <img class="logo" src="images/logo.svg" alt="Логотип сайта">
+      </a>
     </section>
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>

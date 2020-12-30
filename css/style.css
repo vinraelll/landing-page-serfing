@@ -470,15 +470,34 @@ body {
 
 /* BLOG */
 
+.blog {
+  margin-bottom: 200px;
+}
+
 .blog__title {
   margin-bottom: 230px;
 }
 
 .blog__inner {
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   /* min-height: 800px; */
+}
+
+.blog__inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(36, 33, 33, 0.5);
+}
+
+.slick-list {
+  z-index: 5;
 }
 
 .slider {
@@ -533,7 +552,10 @@ body {
 
 .slick-dots button:not(:last-child) {
   margin-right: 15px;
-  
+}
+
+.slick-dots li {
+  z-index: 5;
 }
 
 .slick-active button{
@@ -541,3 +563,242 @@ body {
 }
 
 /* BLOG */
+
+.team__title {
+  margin-bottom: 200px;
+}
+
+.team__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item {
+  margin-bottom: 200px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  color: var(--text-color);
+}
+
+.team__item img {
+  margin-bottom: 25px;
+}
+
+.team__name {
+  margin-bottom: 2px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.team__position {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* BLOG */
+
+/* SERVICES */
+
+.services {
+  padding: 200px 0;
+  background-color: #F8F8F8;
+}
+
+.services__title {
+  margin-bottom: 200px;
+}
+
+.services__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  flex-basis: 360px;
+  min-height: 580px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.services__item:hover {
+  border-color: var(--blue-color);
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  transform: scale(1.05);
+}
+
+.services__items .services__item {
+  padding: 45px 30px;
+  background-color: #fff;
+}
+
+.services__item li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.services__items .services__item .services__name {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+.services__price {
+  margin-top: auto;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+.services__price span {
+  display: inline-block;
+  transform: translateY(-25%);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+/* SERVICES */
+
+/* MAP */
+
+.map {
+  padding: 200px 0;
+}
+
+/* MAP */
+
+/* APPLICATION */
+
+.application__title {
+  margin-bottom: 200px;
+}
+
+.application__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 570px;
+}
+
+.form__input,
+.form__textarea {
+  font-size: 18px;
+  line-height: 1;
+  border: none;
+  color: var(--text-color);
+  border-bottom: 2px solid #DADADA;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.6;
+  color: var(--blue-color);
+}
+
+.form__input {
+  margin-bottom: 32px;
+  padding: 8px 0 8px;
+}
+
+.form__textarea {
+  flex-grow: 2;
+  margin: 20px 0 73px;
+  resize: none;
+}
+
+.form__submit {
+  max-width: 350px;
+  margin-top: auto;
+  padding: 24px 111px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #C4C4C4;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  color: var(--blue-color);
+  border-color: var(--blue-color);
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.application__text {
+  flex-basis: 600px;
+  padding: 50px 50px;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: #F8F8F8;
+}
+
+.application__text p:not(:last-child) {
+  margin-bottom: 65px;
+  
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.social__link {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.6;
+  text-transform: uppercase;
+  color: var(--text-color);
+  transition: color 0.4s ease-in-out;
+}
+
+.social__link:hover {
+  color: var(--blue-color);
+}
+
+.social__link:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* APPLICATION */
+
+/* FOOTER */
+
+.footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-color);
+}
+
+.footer__logo {
+  transition: all 0.4s ease-in-out;
+}
+
+.footer__logo:hover {
+  display: inline-block;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
