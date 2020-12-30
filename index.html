@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
@@ -24,32 +25,32 @@
           </a>
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#about">
                 О нас
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#advantages">
                 Услуги
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#price">
                 Стоимость
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#blog">
                 Блог
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#team">
                 Команда
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#contacts">
                 Контакты
               </a>
             </li>
@@ -59,13 +60,13 @@
           <span>wawe</span>
           Школа серфинга на Канарских островах
         </h1>
-        <a class="header__link" style="background-image: url('images/header-img.svg')" href="#"></a>
+        <a class="header__link" href="#"></a>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about__title title">
           о школе, о серфинге, о канарах
@@ -126,56 +127,62 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="container">
-        <h2 class="advantages__title title">
+        <h2 class="advantages__headline title">
           в школе вы получите
         </h2>
         <div class="advantages__items">
           <div class="advantages__item">
-            <h3 class="advantages__item-title advantages__item-title--waves">
+            <h3 class="advantages__title advantages__title--waves">
               проживание
             </h3>
-            <p>
-              Наша школа серфинга находится в 100 м от океанского побережья. К услугам гостей открытый бассейн и
-              бесплатный Wi-Fi. Из
-              верхней террасы открывается вид на океан. Расстояние до центра города 15 мин.
-            </p>
+            <div class="adventages__text">
+              <p>
+                Наша школа серфинга находится в 100 м от океанского побережья. К услугам гостей открытый бассейн и
+                бесплатный Wi-Fi. Из
+                верхней террасы открывается вид на океан. Расстояние до центра города 15 мин.
+              </p>
+            </div>
           </div>
           <div class="advantages__item">
-            <h3 class="advantages__item-title advantages__item-title--airplane">
+            <h3 class="advantages__title advantages__title--airplane">
               перелет и страховку
             </h3>
-            <p>
-              Все участники программы застрахованы страховой компанией Allianz.<br>
-              Перелет из Тенерифе до острова Лансароте и обратно входит в стоимость программы
-            </p>
+            <div class="adventages__text">
+              <p>
+                Все участники программы застрахованы страховой компанией Allianz.<br>
+                Перелет из Тенерифе до острова Лансароте и обратно входит в стоимость программы
+              </p>
+            </div>
           </div>
           <div class="advantages__item">
-            <h3 class="advantages__item-title advantages__item-title--serfer">
+            <h3 class="advantages__title advantages__title--serfer">
               обучение и экипировку
             </h3>
-            <p>
-              Все оборудование и экипировка известных производителей и предоставляется на весь курс программы.
-              Тренировочный процесс
-              начинается с определения вашего уровня катания
-            </p>
+            <div class="adventages__text">
+              <p>
+                Все оборудование и экипировка известных производителей и предоставляется на весь курс программы.
+                Тренировочный процесс
+                начинается с определения вашего уровня катания
+              </p>
+            </div>
           </div>
         </div>
 
         <div class="advantages__inner">
-          <div class="advantages__stat">
-            <div class="advantages__stat-item">
+          <div class="stats">
+            <div class="stats__item">
               Приехали второй раз
-              <span style="width: 85%">85%</span>
+              <span class="wave-short" style="width: 72%">85%</span>
             </div>
-            <div class="advantages__stat-item">
+            <div class="stats__item">
               Научились кататься
-              <span style="width: 95%">95%</span>
+              <span class="wave-middle" style="width: 85%">95%</span>
             </div>
-            <div class="advantages__stat-item">
+            <div class="stats__item">
               Довольных клиентов
-              <span style="width: 99%">99%</span>
+              <span class="wave-long" style="width: 99%">99%</span>
             </div>
           </div>
           <div class="advantages__info">
@@ -203,32 +210,36 @@
           <h2 class="conquer__title title">
             покоряй вершины
           </h2>
-          <p>
-            Преподаватели нашей школы серфинга в числе лучших серферов на Канарских островах. Среди них - чемпион Европы
-            по
-            лонгборду, который с радостью поделится опытом как с новичками, так и более опытными серферами.
-            Все члены преподавательского состава являются сертифицированными членами Федерации серфинга Канарских
-            островов.
-            Некоторые из них знают русский язык, что определенно позиционирует нас как русскую школу серфинга за
-            границей!
-          </p>
-          <p>
-            Весь тренерский состав регулярно участвует в семинарах и курсах повышения квалификации, которые проводятся
-            по
-            всему миру
-            различными известными серф-клубами и федерациями. Поэтому в нашей школе серфинга вы можете быть спокойны:
-            вас
-            обучают
-            лучшие тренеры!
-          </p>
-          <p>
-            Методика обучения серфингу рассчитана как на новичков, на серферов среднего уровня, так и на серферов уровня
-            ТОП.
-            Тренеры находят подход к каждому, несмотря на то, что обучение серфингу в нашей школе производится в
-            группах.
-            Однако, мы
-            предлагаем персональные уроки серфинга - только вы и тренер! П
-          </p>
+          <div class="conquer__text">
+            <p>
+              Преподаватели нашей школы серфинга в числе лучших серферов на Канарских островах. Среди них - чемпион
+              Европы
+              по
+              лонгборду, который с радостью поделится опытом как с новичками, так и более опытными серферами.
+              Все члены преподавательского состава являются сертифицированными членами Федерации серфинга Канарских
+              островов.
+              Некоторые из них знают русский язык, что определенно позиционирует нас как русскую школу серфинга за
+              границей!
+            </p>
+            <p>
+              Весь тренерский состав регулярно участвует в семинарах и курсах повышения квалификации, которые проводятся
+              по
+              всему миру
+              различными известными серф-клубами и федерациями. Поэтому в нашей школе серфинга вы можете быть спокойны:
+              вас
+              обучают
+              лучшие тренеры!
+            </p>
+            <p>
+              Методика обучения серфингу рассчитана как на новичков, на серферов среднего уровня, так и на серферов
+              уровня
+              ТОП.
+              Тренеры находят подход к каждому, несмотря на то, что обучение серфингу в нашей школе производится в
+              группах.
+              Однако, мы
+              предлагаем персональные уроки серфинга - только вы и тренер! П
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -239,60 +250,59 @@
           галерея
         </h2>
         <div class="gallery__filter">
-          <button class="gallery__btn" data-filter="all" id="filter-all">
+          <button class="gallery__btn" data-filter="all">
             все
           </button>
-          <button class="gallery__btn" data-filter=".tourists" id="filter-tourists">
+          <button class="gallery__btn" data-filter=".tourists">
             туристы
           </button>
           <button class="gallery__btn" data-filter=".nature">
-            Природа
+            природа
           </button>
           <button class="gallery__btn" data-filter=".profile">
             профиль
           </button>
         </div>
         <div class="gallery__inner">
-          <div class="gallery__item mix nature">
+          <a class="gallery__item gallery__item--lg mix nature" href="#">
             <img class="gallery__img" src="images/gallery/gallery-waves.png" alt="Фото волн">
-            <a class="gallery__link" href="#"></a>
-          </div>
-          <div class="gallery__item mix tourists">
+          </a>
+          <a class="gallery__item mix tourists">
             <img class="gallery__img" src="images/gallery/gallery-kid.png" alt="Ребенок на пляже">
-            <a class="gallery__link" href="#"></a>
-          </div>
-          <div class="gallery__item gallery__item--no-margin-right mix tourists" id="serfer">
+          </a>
+          <a class="gallery__item gallery__item--no-margin-right mix tourists" id="serfer">
             <img class="gallery__img " src="images/gallery/gallery-serfer.png" alt="Серфер на пляже">
-            <a class="gallery__link" href="#"></a>
-          </div>
-          <div class="gallery__item mix tourists">
+          </a>
+          <a class="gallery__item mix tourists">
             <img class="gallery__img" src="images/gallery/gallery-girls.png" alt="Женщины на пляже">
-            <a class="gallery__link" href="#"></a>
-          </div>
-          <div class="gallery__item mix profile">
+          </a>
+          <a class="gallery__item mix profile">
             <img class="gallery__img" src="images/gallery/gallery-inside-wave.png" alt="Фото внутри волны">
-            <a class="gallery__link" href="#"></a>
-          </div>
-          <div class="gallery__item gallery__item--no-margin-right mix profile">
+          </a>
+          <a class="gallery__item gallery__item--lg mix profile">
             <img class="gallery__img " src="images/gallery/gallery-bitch.png"
               alt="Женщина с доской для серфинга на пляже">
-            <a class="gallery__link" href="#"></a>
-          </div>
+          </a>
         </div>
-        <a class="gallery__more" href="#">показать еще</a>
+        <button class="gallery__more" href="#">показать еще</button>
       </div>
+
       <blockquote class="blockquote">
-        <div class="blockquote__inner">
-          «Если сомневаешься – иди катайся.»
-          <span class="blockquote__author">
+        <div class="container">
+          <p class="blockquote__text">
+            «Если сомневаешься – иди катайся.»
+          </p>
+          <cite class="blockquote__author">
             Нэт Янг, первый Чемпион Мира по сёрфингу
-          </span>
+          </cite>
         </div>
       </blockquote>
+
       <div class="container">
-        <div class="video" style="background-image: url('images/video-bg.png')">
-          <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=e5Oib9wkZHs"></a>
-        </div>
+        <article class="video" style="background-image: url('images/video-bg.png');">
+          <a class="video__link" data-fancybox href="https://youtu.be/e5Oib9wkZHs"></a>
+        </article>
+
         <div class="statistics">
           <div class="statistics__item">
             450
@@ -314,65 +324,141 @@
       </div>
     </section>
 
-    <section class="blog" style="background-image: url('images/blog-bg.jpg');">
+    <section class="blog">
       <div class="container">
         <h2 class="blog__title title">
           блог
         </h2>
-        <div class="slider">
-          <div class="slider__item">
-            <h3 class="slider__item-title">
-              Что необходимо взять с собой на серф тур
-            </h3>
-            <p class="slider__item-text">
-              ТОП 20 необходимых вещей для комфортного отдыха и обучения
-            </p>
-          </div>
-          <div class="slider__item">
-            <h3 class="slider__item-title">
-              Что необходимо взять с собой на серф тур
-            </h3>
-            <p class="slider__item-text">
-              ТОП 20 необходимых вещей для комфортного отдыха и обучения
-            </p>
-          </div>
-          <div class="slider__item">
-            <h3 class="slider__item-title">
-              Что необходимо взять с собой на серф тур
-            </h3>
-            <p class="slider__item-text">
-              ТОП 20 необходимых вещей для комфортного отдыха и обучения
-            </p>
-          </div>
-          <div class="slider__item">
-            <h3 class="slider__item-title">
-              Что необходимо взять с собой на серф тур
-            </h3>
-            <p class="slider__item-text">
-              ТОП 20 необходимых вещей для комфортного отдыха и обучения
-            </p>
-          </div>
-          <div class="slider__item">
-            <h3 class="slider__item-title">
-              Что необходимо взять с собой на серф тур
-            </h3>
-            <p class="slider__item-text">
-              ТОП 20 необходимых вещей для комфортного отдыха и обучения
-            </p>
-          </div>
-          <div class="slider__item">
-            <h3 class="slider__item-title">
-              Что необходимо взять с собой на серф тур
-            </h3>
-            <p class="slider__item-text">
-              ТОП 20 необходимых вещей для комфортного отдыха и обучения
-            </p>
+      </div>
+      <div class="blog__inner" style="background-image: url('images/blog-bg.jpg');">
+        <div class="container">
+          <div class="slider" id="blog">
+            <div class="slider__item">
+              <div class="slider__item-text">
+                <a class="slider__link" href="#">
+                  <h3 class="slider__item-title">
+                    Что необходимо взять с собой на серф тур
+                  </h3>
+                </a>
+                <p>
+                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
+                </p>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-text">
+                <a class="slider__link" href="#">
+                  <h3 class="slider__item-title">
+                    Что необходимо взять с собой на серф тур
+                  </h3>
+                </a>
+                <p>
+                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
+                </p>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-text">
+                <a class="slider__link" href="#">
+                  <h3 class="slider__item-title">
+                    Что необходимо взять с собой на серф тур
+                  </h3>
+                </a>
+                <p>
+                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
+                </p>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-text">
+                <a class="slider__link" href="#">
+                  <h3 class="slider__item-title">
+                    Что необходимо взять с собой на серф тур
+                  </h3>
+                </a>
+                <p>
+                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
+                </p>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-text">
+                <a class="slider__link" href="#">
+                  <h3 class="slider__item-title">
+                    Что необходимо взять с собой на серф тур
+                  </h3>
+                </a>
+                <p>
+                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
+                </p>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-text">
+                <a class="slider__link" href="#">
+                  <h3 class="slider__item-title">
+                    Что необходимо взять с собой на серф тур
+                  </h3>
+                </a>
+                <p>
+                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
+                </p>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-text">
+                <a class="slider__link" href="#">
+                  <h3 class="slider__item-title">
+                    Что необходимо взять с собой на серф тур
+                  </h3>
+                </a>
+                <p>
+                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
+                </p>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-text">
+                <a class="slider__link" href="#">
+                  <h3 class="slider__item-title">
+                    Что необходимо взять с собой на серф тур
+                  </h3>
+                </a>
+                <p>
+                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
+                </p>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-text">
+                <a class="slider__link" href="#">
+                  <h3 class="slider__item-title">
+                    Что необходимо взять с собой на серф тур
+                  </h3>
+                </a>
+                <p>
+                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
+                </p>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-text">
+                <a class="slider__link" href="#">
+                  <h3 class="slider__item-title">
+                    Что необходимо взять с собой на серф тур
+                  </h3>
+                </a>
+                <p>
+                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  
-    <section class="team">
+
+    <section class="team" id="team">
       <div class="container">
         <h2 class="team__title">
           наша команда
@@ -408,8 +494,8 @@
         </div>
       </div>
     </section>
-  
-    <section class="services">
+
+    <section class="services" id="price">
       <div class="container">
         <h2 class="services__title title">
           пакеты услуг
@@ -508,12 +594,12 @@
         </div>
       </div>
     </section>
-  
+
     <section class="map">
-  
+
     </section>
-  
-    <section class="application">
+
+    <section class="application" id="contacts">
       <div class="container">
         <div class="application__inner">
           <form class="form">
@@ -554,9 +640,9 @@
         </div>
       </div>
     </section>
-  
+
     <section class="footer">
-      
+
     </section>
   </main>
 
