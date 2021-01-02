@@ -40,6 +40,7 @@ body {
   content: "/";
   position: absolute;
   font-size: 72px;
+  line-height: 1.2;
   transform: translateY(3%);
   color: var(--blue-color);
 }
@@ -92,6 +93,7 @@ body {
 .menu__link {
   padding-bottom: 10px;
   font-size: 24px;
+  line-height: 1.2;
   color: #ffffff;
   border-bottom: 1px solid transparent;
   transition: color, border-bottom, 0.3s;
@@ -111,6 +113,7 @@ body {
   display: block;
   font-family: 'Raleway', sans-serif;
   font-size: 200px;
+  line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
   color: #0D302C; 
@@ -189,6 +192,7 @@ body {
   margin-bottom: 10px; 
   align-items: center;
   font-size: 24px;
+  line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -759,6 +763,10 @@ body {
   
 }
 
+.adress {
+  font-style: normal;
+}
+
 .social {
   display: flex;
   justify-content: center;
@@ -788,7 +796,7 @@ body {
 /* FOOTER */
 
 .footer {
-  padding: 70px 0;
+  padding: 70px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -796,11 +804,12 @@ body {
 }
 
 .footer__logo {
+  display: inline-block;
   transition: all 0.4s ease-in-out;
 }
 
 .footer__logo:hover {
-  display: inline-block;
+  
   transform: scale(1.05);
 }
 
