@@ -138,10 +138,13 @@ body {
 }
 
 .about__text {
+  /* column-count: 2;
+  column-gap: 150px; */
+
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  max-width: 1080px;
+  max-width: 1080px; 
 }
 
 .about__text p {
@@ -285,9 +288,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 850px;
-  max-width: 511px;
+  padding: 200px 0px;
   margin-bottom: 200px;
+  max-width: 511px;
 }
 
 .conquer__inner p {
