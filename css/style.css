@@ -96,7 +96,7 @@ body {
   line-height: 1.2;
   color: #ffffff;
   border-bottom: 1px solid transparent;
-  transition: color, border-bottom, 0.3s;
+  transition: color, border-bottom, 0.3s ease;
 } 
 
 .menu__link:hover {
@@ -806,7 +806,6 @@ body {
 }
 
 .footer__logo:hover {
-  
   transform: scale(1.05);
 }
 
