@@ -13,20 +13,14 @@ $(function(){
     })
   }
 
-  const mixer = mixitup('.gallery__inner');
-
   $('.slider').slick({
     arrows: false,
     dots: true,
   });
-
-//   function myMap() {
-//     const mapCanvas = document.getElementById("map");
-//     const mapOptions = {
-//         center: new google.maps.LatLng(51.5, -0.2),
-//         zoom: 10
-//     };
-//     const map = new google.maps.Map(mapCanvas, mapOptions);
-// }
-
+  
+  $('.menu__btn').on('click', function(){
+    $('.menu').toggleClass('menu--active')
+  })
+  
+  const mixer = mixitup('.gallery__inner');
 });
