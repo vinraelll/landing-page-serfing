@@ -1,0 +1,158 @@
+
+@media (max-width: 1000px) {
+  .header__title span {
+    font-size: 170px;
+  }
+
+  .header__title {
+    font-size: 22px;
+  }
+
+  .about {
+    padding: 80px 0;
+  }
+
+  .about__title {
+    padding: 0px 50px;
+    margin-bottom: 68px;
+    font-size: 42px;
+  }
+
+  .about__text p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 880px) {
+  .header__title span {
+    font-size: 150px;
+  }
+
+  .header__title {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100px;
+    flex-direction: column;
+    background-color: teal;
+    transform: translateY(-200%);
+  }
+
+  .menu__item {
+    padding: 10px 0px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .menu__btn {
+    display: block;
+  }
+
+  .header__nav {
+    align-self: flex-end;
+  }
+
+  .about__title {
+    font-size: 36px;
+  }
+
+  .title::after {
+    font-size: 58px;
+  }  
+}
+
+
+@media (max-width: 768px) {
+  .header__title span {
+    font-size: 120px;
+  }
+
+  .header__title {
+    font-size: 18px;
+  }
+
+  .about {
+    padding: 40px 0;
+  }
+
+  .about__title {
+    margin-bottom: 40px;
+    font-size: 36px;
+    padding: 0px 10px;
+  }
+
+  .title::after {
+    font-size: 52px;
+  }
+
+  .about__text p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 753px) {
+  .header__title span {
+    font-size: 150px;
+  }
+
+  .header__title {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 692px) {
+  .about__title {
+    font-size: 24px;
+  }
+
+  .title::after {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__title span {
+    font-size: 100px;
+  }
+
+  .header__title {
+    font-size: 16px;
+  }
+
+  .header__link {
+    margin: 60px 0;
+  }
+
+  .about__title {
+    font-size: 20px;
+  }
+
+  .title::after {
+    font-size: 38px;
+  }
+  .about__text p {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__title span {
+    font-size: 86px;
+  }
+
+  .header__title {
+    font-size: 14px;
+  }
+
+  .header__link {
+    margin: 40px 0;
+  }
+}
