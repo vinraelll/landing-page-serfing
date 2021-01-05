@@ -264,6 +264,18 @@ body {
   height: 15px;  
 }
 
+.wave-short {
+  width: 72%;
+}
+
+.wave-middle {
+  width: 85%;
+}
+
+.wave-long {
+  width: 99%;
+}
+
 .wave-short::before {
   background-image: url('../images/wave-line-short.svg');
   width: 200px;
@@ -293,8 +305,9 @@ body {
 
 .conquer { 
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: right 100%;
+  background-size: 50% 100%;
+  background-position: right;
+ 
 }
 
 .conquer__inner {
