@@ -17,7 +17,7 @@
 </head>
 
 <body id="top">
-  <header class="header" style="background-image: url('images/header-bg.png')">
+  <!-- <header class="header" style="background-image: url('images/header-bg.png')">
     <div class="container">
       <div class="header__inner">
         <nav class="header__nav">
@@ -181,16 +181,25 @@
         <div class="advantages__inner">
           <div class="stats">
             <div class="stats__item">
-              Приехали второй раз
-              <span class="wave-short">85%</span>
+              <div class="stats__info">
+                <div class="stats__wave stats__wave--sm"></div>
+                <div class="stats__count">85%</div>
+              </div>
+              <span>Приехали второй раз</span> 
             </div>
             <div class="stats__item">
-              Научились кататься
-              <span class="wave-middle">95%</span>
+              <div class="stats__info">
+                <div class="stats__wave stats__wave--md"></div>
+                <div class="stats__count">95%</div>
+              </div>
+              <span>Научились кататься</span>
             </div>
             <div class="stats__item">
-              Довольных клиентов
-              <span class="wave-long">99%</span>
+              <div class="stats__info">
+                <div class="stats__wave stats__wave--lg"></div>
+                <div class="stats__count">99%</div>
+              </div>
+              <span>Довольных клиентов</span>
             </div>
           </div>
           <div class="advantages__info">
@@ -252,7 +261,7 @@
       </div>
     </section>
 
-    <!--<section class="gallery">
+    <section class="gallery">
       <div class="container">
         <h2 class="gallery__title title">
           галерея
@@ -272,22 +281,22 @@
           </button>
         </div>
         <div class="gallery__inner">
-          <a class="gallery__item gallery__item--lg mix nature" href="#">
+          <a class="gallery__item gallery__item--lg mix nature" href="images/gallery/gallery-waves.png" data-fancybox="gallery">
             <img class="gallery__img" src="images/gallery/gallery-waves.png" alt="Фото волн">
           </a>
-          <a class="gallery__item mix tourists">
+          <a class="gallery__item mix tourists" href="images/gallery/gallery-kid.png" data-fancybox="gallery">
             <img class="gallery__img" src="images/gallery/gallery-kid.png" alt="Ребенок на пляже">
           </a>
-          <a class="gallery__item gallery__item--no-margin-right mix tourists" id="serfer">
+          <a class="gallery__item mix tourists" href="images/gallery/gallery-serfer.png" data-fancybox="gallery">
             <img class="gallery__img " src="images/gallery/gallery-serfer.png" alt="Серфер на пляже">
           </a>
-          <a class="gallery__item mix tourists">
+          <a class="gallery__item mix tourists" href="images/gallery/gallery-girls.png" data-fancybox="gallery">
             <img class="gallery__img" src="images/gallery/gallery-girls.png" alt="Женщины на пляже">
           </a>
-          <a class="gallery__item mix profile">
+          <a class="gallery__item mix profile" href="images/gallery/gallery-inside-wave.png" data-fancybox="gallery">
             <img class="gallery__img" src="images/gallery/gallery-inside-wave.png" alt="Фото внутри волны">
           </a>
-          <a class="gallery__item gallery__item--lg mix profile">
+          <a class="gallery__item gallery__item--lg mix profile" href="images/gallery/gallery-bitch.png" data-fancybox="gallery">
             <img class="gallery__img " src="images/gallery/gallery-bitch.png"
               alt="Женщина с доской для серфинга на пляже">
           </a>
@@ -295,21 +304,21 @@
         <button class="gallery__more" href="#">показать еще</button>
       </div>
 
-      <blockquote class="blockquote">
-        <div class="container">
-          <p class="blockquote__text">
-            «Если сомневаешься – иди катайся.»
-          </p>
-          <cite class="blockquote__author">
-            Нэт Янг, первый Чемпион Мира по сёрфингу
-          </cite>
-        </div>
-      </blockquote>
+      <div class="quote">
+        <blockquote class="blockquote">
+            <p class="blockquote__text">
+              «Если сомневаешься – иди катайся.»
+            </p>
+            <cite class="blockquote__author">
+              Нэт Янг, первый Чемпион Мира по сёрфингу
+            </cite>
+        </blockquote>
+      </div> 
 
       <div class="container">
-        <article class="video" style="background-image: url('images/video-bg.png');">
+        <div class="video" style="background-image: url('images/video-bg.png');">
           <a class="video__link" data-fancybox href="https://youtu.be/e5Oib9wkZHs"></a>
-        </article>
+        </div>
 
         <div class="statistics">
           <div class="statistics__item">
@@ -330,143 +339,53 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="blog">
-      <div class="container">
-        <h2 class="blog__title title">
-          блог
-        </h2>
-      </div>
-      <div class="blog__inner" style="background-image: url('images/blog-bg.jpg');">
-        <div class="container">
-          <div class="slider" id="blog">
-            <div class="slider__item">
-              <div class="slider__item-text">
-                <a class="slider__link" href="#">
-                  <h3 class="slider__item-title">
-                    Что необходимо взять с собой на серф тур
-                  </h3>
-                </a>
-                <p>
-                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
-                </p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-text">
-                <a class="slider__link" href="#">
-                  <h3 class="slider__item-title">
-                    Что необходимо взять с собой на серф тур
-                  </h3>
-                </a>
-                <p>
-                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
-                </p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-text">
-                <a class="slider__link" href="#">
-                  <h3 class="slider__item-title">
-                    Что необходимо взять с собой на серф тур
-                  </h3>
-                </a>
-                <p>
-                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
-                </p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-text">
-                <a class="slider__link" href="#">
-                  <h3 class="slider__item-title">
-                    Что необходимо взять с собой на серф тур
-                  </h3>
-                </a>
-                <p>
-                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
-                </p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-text">
-                <a class="slider__link" href="#">
-                  <h3 class="slider__item-title">
-                    Что необходимо взять с собой на серф тур
-                  </h3>
-                </a>
-                <p>
-                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
-                </p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-text">
-                <a class="slider__link" href="#">
-                  <h3 class="slider__item-title">
-                    Что необходимо взять с собой на серф тур
-                  </h3>
-                </a>
-                <p>
-                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
-                </p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-text">
-                <a class="slider__link" href="#">
-                  <h3 class="slider__item-title">
-                    Что необходимо взять с собой на серф тур
-                  </h3>
-                </a>
-                <p>
-                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
-                </p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-text">
-                <a class="slider__link" href="#">
-                  <h3 class="slider__item-title">
-                    Что необходимо взять с собой на серф тур
-                  </h3>
-                </a>
-                <p>
-                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
-                </p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-text">
-                <a class="slider__link" href="#">
-                  <h3 class="slider__item-title">
-                    Что необходимо взять с собой на серф тур
-                  </h3>
-                </a>
-                <p>
-                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
-                </p>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-text">
-                <a class="slider__link" href="#">
-                  <h3 class="slider__item-title">
-                    Что необходимо взять с собой на серф тур
-                  </h3>
-                </a>
-                <p>
-                  ТОП 20 необходимых вещей для комфортного отдыха и обучения
-                </p>
-              </div>
-            </div>
+  <section class="blog">
+    <h2 class="blog__title title">
+      блог
+    </h2>
+    <div class="container container--slider">
+      <div class="slider" id="blog">
+
+        <a class="slider__item" style="background-image: url('images/blog-bg.jpg');" href="#">
+          <div class="slider__descr">
+            <h3 class="slider__title">
+              Что необходимо взять с собой на серф тур
+            </h3>
+            <p class="slider__subtitle">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
           </div>
-        </div>
-      </div>
-    </section>
+        </a>
 
-    <section class="team" id="team">
+        <a class="slider__item" style="background-image: url('images/blog-bg.jpg');" href="#">
+          <div class="slider__descr">
+            <h3 class="slider__title">
+              Что необходимо взять с собой на серф тур
+            </h3>
+            <p class="slider__subtitle">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </a>
+
+        <a class="slider__item" style="background-image: url('images/blog-bg.jpg');" href="#">
+          <div class="slider__descr">
+            <h3 class="slider__title">
+              Что необходимо взять с собой на серф тур
+            </h3>
+            <p class="slider__subtitle">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!--<section class="team" id="team">
       <div class="container">
         <h2 class="team__title title">
           наша команда
