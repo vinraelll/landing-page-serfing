@@ -17,18 +17,21 @@
 </head>
 
 <body id="top">
-  <!-- <header class="header" style="background-image: url('images/header-bg.png')">
+  <header class="header" style="background-image: url('images/header-bg.png')">
     <div class="container">
       <div class="header__inner">
         <nav class="header__nav">
           <a class="header__logo" href="#">
             <img class="logo" src="images/logo.svg" alt="Логотип сайта">
           </a>
-          <button class="menu__btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="25" viewBox="0 0 30 18" fill="none">
-              <path d="M0 0H30V2H0V0Z" fill="#01353E"></path>
-              <path d="M0 8H30V10H0V8Z" fill="#01353E"></path>
-              <rect y="16" width="30" height="2" fill="#01353E"></rect>
+          <button class="burger burger__btn">
+            <svg viewBox="170 75 500 500">
+              <path class="burger__top"
+                d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"></path>
+              <path class="burger__middle" d="M300,320 L540,320"></path>
+              <path class="burger__bottom"
+                d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                transform="translate(480, 320) scale(1, -1) translate(-480, -318)"></path>
             </svg>
           </button>
           <ul class="menu">
@@ -185,7 +188,7 @@
                 <div class="stats__wave stats__wave--sm"></div>
                 <div class="stats__count">85%</div>
               </div>
-              <span>Приехали второй раз</span> 
+              <span>Приехали второй раз</span>
             </div>
             <div class="stats__item">
               <div class="stats__info">
@@ -267,21 +270,22 @@
           галерея
         </h2>
         <div class="gallery__filter">
-          <button class="gallery__btn" data-filter="all">
+          <button class="gallery__btn button-reset" data-filter="all">
             все
           </button>
-          <button class="gallery__btn" data-filter=".tourists">
+          <button class="gallery__btn button-reset" data-filter=".tourists">
             туристы
           </button>
-          <button class="gallery__btn" data-filter=".nature">
+          <button class="gallery__btn button-reset" data-filter=".nature">
             природа
           </button>
-          <button class="gallery__btn" data-filter=".profile">
+          <button class="gallery__btn button-reset" data-filter=".profile">
             профиль
           </button>
         </div>
         <div class="gallery__inner">
-          <a class="gallery__item gallery__item--lg mix nature" href="images/gallery/gallery-waves.png" data-fancybox="gallery">
+          <a class="gallery__item gallery__item--lg mix nature" href="images/gallery/gallery-waves.png"
+            data-fancybox="gallery">
             <img class="gallery__img" src="images/gallery/gallery-waves.png" alt="Фото волн">
           </a>
           <a class="gallery__item mix tourists" href="images/gallery/gallery-kid.png" data-fancybox="gallery">
@@ -296,24 +300,25 @@
           <a class="gallery__item mix profile" href="images/gallery/gallery-inside-wave.png" data-fancybox="gallery">
             <img class="gallery__img" src="images/gallery/gallery-inside-wave.png" alt="Фото внутри волны">
           </a>
-          <a class="gallery__item gallery__item--lg mix profile" href="images/gallery/gallery-bitch.png" data-fancybox="gallery">
+          <a class="gallery__item gallery__item--lg mix profile" href="images/gallery/gallery-bitch.png"
+            data-fancybox="gallery">
             <img class="gallery__img " src="images/gallery/gallery-bitch.png"
               alt="Женщина с доской для серфинга на пляже">
           </a>
         </div>
-        <button class="gallery__more" href="#">показать еще</button>
+        <button class="gallery__more button-reset" href="#">показать еще</button>
       </div>
 
       <div class="quote">
         <blockquote class="blockquote">
-            <p class="blockquote__text">
-              «Если сомневаешься – иди катайся.»
-            </p>
-            <cite class="blockquote__author">
-              Нэт Янг, первый Чемпион Мира по сёрфингу
-            </cite>
+          <p class="blockquote__text">
+            «Если сомневаешься – иди катайся.»
+          </p>
+          <cite class="blockquote__author">
+            Нэт Янг, первый Чемпион Мира по сёрфингу
+          </cite>
         </blockquote>
-      </div> 
+      </div>
 
       <div class="container">
         <div class="video" style="background-image: url('images/video-bg.png');">
@@ -339,53 +344,64 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
-  <section class="blog">
-    <h2 class="blog__title title">
-      блог
-    </h2>
-    <div class="container container--slider">
-      <div class="slider" id="blog">
+    <section class="blog" id="blog">
+      <h2 class="blog__title title">
+        блог
+      </h2>
+      <div class="container container--slider">
+        <div class="slider">
 
-        <a class="slider__item" style="background-image: url('images/blog-bg.jpg');" href="#">
-          <div class="slider__descr">
-            <h3 class="slider__title">
-              Что необходимо взять с собой на серф тур
-            </h3>
-            <p class="slider__subtitle">
-              ТОП 20 необходимых вещей для комфортного отдыха и обучения
-            </p>
+          <div class="slider__item" style="background-image: url('images/blog-bg.jpg');">
+            <a class="slider__descr" href="#">
+              <h3 class="slider__title">
+                Что необходимо взять с собой на серф тур
+              </h3>
+              <p class="slider__subtitle">
+                ТОП 20 необходимых вещей для комфортного отдыха и обучения
+              </p>
+            </a>
           </div>
-        </a>
 
-        <a class="slider__item" style="background-image: url('images/blog-bg.jpg');" href="#">
-          <div class="slider__descr">
-            <h3 class="slider__title">
-              Что необходимо взять с собой на серф тур
-            </h3>
-            <p class="slider__subtitle">
-              ТОП 20 необходимых вещей для комфортного отдыха и обучения
-            </p>
+          <div class="slider__item" style="background-image: url('images/blog-bg.jpg');">
+            <a class="slider__descr" href="#">
+              <h3 class="slider__title">
+                Что необходимо взять с собой на серф тур
+              </h3>
+              <p class="slider__subtitle">
+                ТОП 20 необходимых вещей для комфортного отдыха и обучения
+              </p>
+            </a>
           </div>
-        </a>
 
-        <a class="slider__item" style="background-image: url('images/blog-bg.jpg');" href="#">
-          <div class="slider__descr">
-            <h3 class="slider__title">
-              Что необходимо взять с собой на серф тур
-            </h3>
-            <p class="slider__subtitle">
-              ТОП 20 необходимых вещей для комфортного отдыха и обучения
-            </p>
+          <div class="slider__item" style="background-image: url('images/blog-bg.jpg');">
+            <a class="slider__descr" href="#">
+              <h3 class="slider__title">
+                Что необходимо взять с собой на серф тур
+              </h3>
+              <p class="slider__subtitle">
+                ТОП 20 необходимых вещей для комфортного отдыха и обучения
+              </p>
+            </a>
           </div>
-        </a>
 
+          <div class="slider__item" style="background-image: url('images/blog-bg.jpg');">
+            <a class="slider__descr" href="#">
+              <h3 class="slider__title">
+                Что необходимо взять с собой на серф тур
+              </h3>
+              <p class="slider__subtitle">
+                ТОП 20 необходимых вещей для комфортного отдыха и обучения
+              </p>
+            </a>
+          </div>
+
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--<section class="team" id="team">
+    <section class="team" id="team">
       <div class="container">
         <h2 class="team__title title">
           наша команда
@@ -393,27 +409,27 @@
         <div class="team__items">
           <div class="team__item">
             <img alt="Майк" src="images/team/mike.jpg">
-            <h4 class="team__name">
+            <p class="team__name">
               Mike
-            </h4>
+            </p>
             <p class="team__position">
               Главный инструктор
             </p>
           </div>
           <div class="team__item">
             <img alt="Майк" src="images/team/mary.jpg">
-            <h4 class="team__name">
+            <p class="team__name">
               Mary
-            </h4>
+            </p>
             <p class="team__position">
               Инструктор
             </p>
           </div>
           <div class="team__item">
             <img alt="Майк" src="images/team/olga.jpg">
-            <h4 class="team__name">
+            <p class="team__name">
               Ольга
-            </h4>
+            </p>
             <p class="team__position">
               Инструктор
             </p>
@@ -422,170 +438,137 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="price" id="price">
       <div class="container">
-        <h2 class="services__title title" id="price">
+        <h2 class="price__title title">
           пакеты услуг
         </h2>
-        <div class="services__items">
-          <ul class="services__item">
-            <li class="services__name">
+        <div class="price__items">
+
+          <div class="price__box">
+            <h3 class="price__name">
               Стандарт
-            </li>
-            <li>
-              Проживание на вилле 6 ночей
-            </li>
-            <li>
-              Номер категории стандарт
-            </li>
-            <li>
-              Экипировка для обучения
-            </li>
-            <li>
-              Обучение серфингу 5 тренировок по 2 часа
-            </li>
-            <li>
-              Страховка
-            </li>
-            <li>
-              Вечеринка с угощениями и дискотекой
-            </li>
-            <li class="services__price">
+            </h3>
+            <ul class="price__list">
+              <li class="price__item">Проживание на вилле 6 ночей</li>
+              <li class="price__item">Номер категории стандарт</li>
+              <li class="price__item">Экипировка для обучения</li>
+              <li class="price__item">Обучение серфингу 5 тренировок по 2 часа</li>
+              <li class="price__item">Страховка</li>
+              <li class="price__item">Вечеринка с угощениями и дискотекой</li>
+            </ul>
+            <div class="price__numeral">
               450<span>$</span>
-            </li>
-          </ul>
-          <ul class="services__item">
-            <li class="services__name">
+            </div>
+          </div>
+
+          <div class="price__box">
+            <h3 class="price__name">
               Все включено
-            </li>
-            <li>
-              Проживание на вилле 6 ночей
-            </li>
-            <li>
-              Номер категории стандарт
-            </li>
-            <li>
-              Экипировка для обучения
-            </li>
-            <li>
-              Обучение серфингу 5 тренировок по 2 часа
-            </li>
-            <li>
-              Страховка
-            </li>
-            <li>
-              Вечеринка с угощениями и дискотекой
-            </li>
-            <li>
-              Авиа перелет Тенерифе - Лансароте - Тенерифе
-            </li>
-            <li>
-              Завтраки на вилле
-            </li>
-            <li class="services__price">
-              950<span>$</span>
-            </li>
-          </ul>
-          <ul class="services__item">
-            <li class="services__name">
+            </h3>
+            <ul class="price__list">
+              <li class="price__item">Проживание на вилле 6 ночей</li>
+              <li class="price__item">Номер категории стандарт</li>
+              <li class="price__item">Экипировка для обучения</li>
+              <li class="price__item">Обучение серфингу 5 тренировок по 2 часа</li>
+              <li class="price__item">Страховка</li>
+              <li class="price__item">Вечеринка с угощениями и дискотекой</li>
+              <li class="price__item">Авиа перелет Тенерифе - Лансароте - Тенерифе</li>
+              <li class="price__item">Завтраки на вилле</li>
+            </ul>
+            <div class="price__numeral">
+              450<span>$</span>
+            </div>
+          </div>
+
+          <div class="price__box">
+            <h3 class="price__name">
               Профи
-            </li>
-            <li>
-              Проживание на вилле 6 ночей
-            </li>
-            <li>
-              Номер категории стандарт
-            </li>
-            <li>
-              Экипировка для обучения
-            </li>
-            <li>
-              Обучение серфингу 5 тренировок по 2 часа
-            </li>
-            <li>
-              Страховка
-            </li>
-            <li>
-              Вечеринка с угощениями и дискотекой
-            </li>
-            <li>
-              Авиа перелет Тенерифе -Лансароте - Тенерифе
-            </li>
-            <li>
-              Завтраки и ужины на вилле
-            </li>
-            <li class="services__price">
+            </h3>
+            <ul class="price__list">
+              <li class="price__item">Проживание на вилле 6 ночей</li>
+              <li class="price__item">Номер категории стандарт</li>
+              <li class="price__item">Экипировка для обучения</li>
+              <li class="price__item">Обучение серфингу 5 тренировок по 2 часа</li>
+              <li class="price__item">Страховка</li>
+              <li class="price__item">Вечеринка с угощениями и дискотекой</li>
+              <li class="price__item">Авиа перелет Тенерифе - Лансароте - Тенерифе</li>
+              <li class="price__item">Завтраки и ужины на вилле</li>
+            </ul>
+            <div class="price__numeral">
               1450<span>$</span>
-            </li>
-          </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
     <section class="map">
-      <div class="container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d684677.8644777949!2d32.806062479169405!3d47.90691879501058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dadfe03154ab7b%3A0xb0fa3a177d6b186e!2z0JrRgNC40LLQvtC5INCg0L7Qsywg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDUwMDAw!5e0!3m2!1sru!2sua!4v1609336357881!5m2!1sru!2sua"
-          width="100%" height="640" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0">
-        </iframe>
-      </div>
+      <div class="map__inner" style="background-image: url(/images/map.png)"></div>
     </section>
 
-    <section class="application" id="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
-        <h3 class="application__title title">
+        <h2 class="contacts__title title">
           Оставить заявку
-        </h3>
-        <div class="application__inner">
-          <form class="form">
+        </h2>
+        <div class="contacts__inner">
+          <form class="contacts__form form">
             <input class="form__input" placeholder="Имя" type="text">
-            <input class="form__input" placeholder="Телефон" type="text">
+            <input class="form__input" placeholder="Телефон" type="tel">
             <textarea class="form__textarea"
               placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
-            <button class="form__submit" type="submit">
+            <button class="form__submit button-reset" type="submit">
               Отправить
             </button>
           </form>
-          <div class="application__text">
+          <div class="contacts__text">
             <p>
-              Есть вопрос?<br>
+              <span>Есть вопрос?</span>
               Вы можете связаться с нами:
             </p>
             <p>
-              WhatsApp, Viber, Telegram<br>
-              +3 467 486-37-88
+              <span>WhatsApp, Viber, Telegram</span>
+              <a href="tel:+34674863788">+3 467 486-37-88</a>
             </p>
             <address class="adress">
-              Avenida grandes playas 79,<br>
-              Corralejo la Oliva Fuerteventura,<br>
+              <span>Avenida grandes playas 79,</span>
+              <span>Corralejo la Oliva Fuerteventura,</span>
               Spain. 35660
             </address>
           </div>
         </div>
-        <div class="social">
-          <a class="social__link" href="#">
-            INSTAGRAM
-          </a>
-          <a class="social__link" href="#">
-            FACEBOOK
-          </a>
-          <a class="social__link" href="#">
-            YOUTUBE
-          </a>
-        </div>
+
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              Instagram
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              Facebook
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              Youtube
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="footer">
-      <a class="footer__logo" href="#top">
-        <img class="logo" src="images/logo.svg" alt="Логотип сайта">
-      </a>
-    </section>
-  </main> -->
+  </main>
 
+  <footer class="footer">
+    <a class="footer__logo" href="#top">
+      <img class="logo" src="images/logo.svg" alt="Логотип сайта">
+    </a>
+  </footer>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
