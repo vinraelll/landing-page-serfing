@@ -27,8 +27,16 @@ $(function(){
   });
   
   $('.burger__btn').on('click', function(){
-    $('.menu').toggleClass('menu--active')
-  })
+    $('.menu').toggleClass('menu--active'),
+    $('body').toggleClass('lockScroll')
+  });
+
+
+  let menuLinks = document.querySelectorAll('.menu')
+    menuLinks.array.forEach(element => {
+      
+    });
+  
 
   const mixer = mixitup('.gallery__inner');
 });

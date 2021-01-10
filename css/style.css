@@ -30,6 +30,10 @@ body {
   padding: 0px;
 }
 
+.lockScroll {
+  overflow: hidden;
+}
+
 .title {
   position: relative;
   text-align: center;
@@ -112,7 +116,7 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  transition: all 0.6s ease-out;
+  transition: all 0.6s cubic-bezier(1, -0.2, .01, 1.42);
 }
 
 .menu.menu--active {
@@ -328,6 +332,7 @@ svg:not(:root) {
 .stats__wave--md,
 .stats__wave--lg {
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: 100%;
 }
 
