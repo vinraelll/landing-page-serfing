@@ -24,6 +24,14 @@ $(function(){
   $('.slider').slick({
     arrows: false,
     dots: true,
+
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          dots: false,
+        }
+      }]
   });
   
   $('.burger__btn').on('click', function(){
@@ -32,10 +40,10 @@ $(function(){
   });
 
 
-  let menuLinks = document.querySelectorAll('.menu')
-    menuLinks.array.forEach(element => {
+  // let menuLinks = document.querySelectorAll('.menu')
+  //   menuLinks.array.forEach(element => {
       
-    });
+  //   });
   
 
   const mixer = mixitup('.gallery__inner');

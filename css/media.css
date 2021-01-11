@@ -1,4 +1,4 @@
-@media (max-width: 1224px) {
+@media (max-width: 1140px) {
   .conquer {
     background-size: 100% 100%;
   }
@@ -59,7 +59,7 @@
 
   .gallery__title {
     font-size: 44px;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
   }
 
   .gallery__inner {
@@ -73,6 +73,18 @@
     margin-bottom: 20px;
   }
 
+  .blockquote {
+    padding: 80px 10px;
+    font-size: 34px;
+  }
+
+  .slider__item {
+    padding: 382px 0;
+  }
+
+  .slider__title {
+    font-size: 42px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -151,6 +163,34 @@
     padding: 0px 5px;
   }
 
+  .blockquote {
+    font-size: 30px;
+    max-width: max-content;
+  }
+
+  .blockquote__author {
+    transform: translateX(20%);
+  }
+
+  .video {
+    min-height: 500px;
+  }
+
+  .blog__title {
+    margin-bottom: 170px;
+  }
+
+  .slider__item {
+    padding: 340px 0;
+  }
+
+  .slider__descr {
+    padding: 0px 10px;
+  }
+
+  .slider__title {
+    font-size: 36px;
+  }
 
 }
 
@@ -191,9 +231,47 @@
     padding: 50px 0px;
   }
 
+  .gallery {
+    padding-bottom: 150px;
+  }
+
   .gallery__title {
     font-size: 40px;
-    margin-bottom: 125px;
+    margin-bottom: 100px;
+  }
+
+  .gallery__more {
+    margin: 0 auto 100px;
+  }
+
+  .quote {
+    margin-bottom: 80px;
+  }
+
+  .blockquote {
+    padding: 50px 10px;
+    font-size: 24px;
+  }
+
+  .blockquote__author {
+    transform: translateX(12%);
+  }
+
+  .video {
+    min-height: 400px;
+    margin-bottom: 160px;
+  }
+
+  .blog__title {
+    font-size: 42px;
+  }
+
+  .slider__item {
+    padding: 320px 0;
+  }
+
+  .slider__title {
+    font-size: 32px;
   }
 }
 
@@ -233,6 +311,82 @@
   .advantages__item {
     max-width: 80%;
   }
+
+  .gallery__title {
+    margin-bottom: 70px;
+  }
+
+  .gallery__filter {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .gallery__btn {
+    padding: 10px 40px;
+    border: 2px solid teal;
+    border-radius: 7px;
+  }
+
+  .gallery__btn:not(:last-child) {
+    margin: 5px 0;
+  }
+
+  .gallery__btn:hover {
+    color: #FFFFFF;
+    background-color: teal;
+  }
+
+  .blockquote {
+    font-size: 20px;
+  }
+
+  .blockquote__author {
+    font-size: 12px;
+    transform: translateX(7%);
+  }
+
+  .gallery {
+    padding-bottom: 100px;
+  }
+
+  .gallery__more {
+    font-size: 20px;
+    padding: 25px 55px 25px;
+    margin: 0 auto 50px;
+  } 
+
+  .video {
+    min-height: 300px;
+    margin-bottom: 140px;
+  }
+
+  .statistics {
+    flex-wrap: wrap;
+  }
+
+  .statistics__item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .blog__title {
+    font-size: 38px;
+    margin-bottom: 130px;
+  }
+
+  .slider__item {
+    padding: 300px 0;
+  }
+
+  .slider__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .slider__subtitle {
+    font-size: 12px;
+  }
+
 }
 
 @media (max-width: 692px) {
@@ -248,11 +402,24 @@
     font-size: 44px;
   }
 
-
-
   .conquer__title {
     font-size: 32px;
     margin-bottom: 38px;
+  }
+
+  .gallery__title {
+    font-size: 32px;
+  }
+
+  .gallery__more {
+    font-size: 18px;
+    padding: 20px 40px 20px;
+    margin: 0 auto 50px;
+  } 
+
+  .blog__title {
+    font-size: 32px;
+    margin-bottom: 100px;
   }
 }
 
@@ -297,7 +464,6 @@
     font-size: 19px;
   }
   
-
   .conquer__title {
     font-size: 24px;
     margin-bottom: 26px;
@@ -305,6 +471,42 @@
 
   .conquer__inner {
     padding: 40px 0;
+  }
+  
+  .gallery {
+    padding-bottom: 70px;
+  }
+
+  .gallery__title {
+    font-size: 28px;
+  }
+
+  .video {
+    margin-bottom: 100px;
+  }
+
+  .statistics__item {
+    font-size: 56px;
+  }
+
+  .gallery__btn {
+    padding: 8px 30px;
+    font-size: 18px;
+  }
+
+  .blog__title {
+    font-size: 28px;
+    margin-bottom: 70px;
+  }
+
+  .slider__item {
+    padding: 232px 0;
+  }
+
+  .slider__descr {
+    text-align: center;
+    left: 0%;
+    right: 0%
   }
 }
 
@@ -340,4 +542,25 @@
   .wave-long::before {
     width: 254px;
   }  
+
+  .blockquote {
+    padding: 30px 10px;
+    font-size: 16px;
+  }
+
+  .blockquote__author {
+    font-size: 11px;
+    text-align: center;
+    line-height: 2;
+    transform: translateX(0%);
+  }
+
+  .video {
+    margin-bottom: 70px;
+  }
+
+  .statistics__item {
+    width: 100%;
+    font-size: 52px;
+  }
 }
