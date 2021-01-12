@@ -1,15 +1,15 @@
 @media (max-width: 1140px) {
   .conquer {
-    background-size: 100% 100%;
+    background-size: 100%;
   }
 
   .conquer__inner {
     padding: 100px 0px;
     margin-bottom: 0px;
-    color: #FFFFFF;
   }
 
-  .conquer__title {
+  .conquer__title,
+  .conquer__inner {
     color: #FFFFFF;
   }
 
@@ -53,13 +53,11 @@
   }
 
   .conquer__title {
-    font-size: 42px;
     margin-bottom: 68px;
   }
 
   .gallery__title {
     font-size: 44px;
-    margin-bottom: 100px;
   }
 
   .gallery__inner {
@@ -82,14 +80,14 @@
     padding: 382px 0;
   }
 
-  .slider__title {
+  .slider__title,
+  .conquer__title {
     font-size: 42px;
   }
 
   .team__items {
     flex-wrap: wrap;
     justify-content: space-around;
-    
   }
 
   .team__item {
@@ -101,7 +99,8 @@
     padding: 100px 0;
   }
 
-  .price__title {
+  .price__title,
+  .gallery__title {
     margin-bottom: 100px;
   }
 
@@ -166,7 +165,6 @@
   .menu__link {
     font-size: 28px;
     text-transform: uppercase;
-
   }
 
   .menu__item:not(:last-child) {
@@ -248,11 +246,11 @@
 
   .advantages__headline {
     margin-bottom: 50px;
-    font-size: 36px;
   }
 
   .about__title,
-  .conquer__title {
+  .conquer__title,
+  .advantages__headline {
     font-size: 36px;
   }
 
@@ -304,7 +302,10 @@
     margin-bottom: 160px;
   }
 
-  .blog__title {
+  .blog__title,
+  .price__title,
+  .team__title,
+  .contacts__title {
     font-size: 42px;
   }
 
@@ -317,12 +318,7 @@
   }
 
   .team__title {
-    font-size: 42px;
     margin-bottom: 150px;
-  }
-
-  .price__title {
-    font-size: 42px;
   }
 
   .map {
@@ -331,7 +327,6 @@
 
   .contacts__title {
     margin-bottom: 100px;
-    font-size: 42px;
   }
 
   .contacts__inner {
@@ -348,6 +343,10 @@
     margin-bottom: 30px;
   }
 
+  .form__textarea {
+    min-height: 200px;
+  }
+
   .form__submit {
     margin: auto auto; 
   }
@@ -359,7 +358,8 @@
 }
 
 @media (max-width: 768px) {
-  .header__title {
+  .header__title,
+  .blockquote {
     font-size: 18px;
   }
 
@@ -417,10 +417,6 @@
   .gallery__btn:hover {
     color: #FFFFFF;
     background-color: teal;
-  }
-
-  .blockquote {
-    font-size: 20px;
   }
 
   .blockquote__author {
@@ -529,21 +525,14 @@
     margin-bottom: 100px;
   }
 
-  .slider {
-    margin-bottom: 50px;
-  }
-
-  .team__title {
-    font-size: 38px;
-    margin-bottom: 70px;
-  }
-
+  .slider,
   .team__item {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
+  .team__title,
   .price__title {
-    font-size: 34px;
+    font-size: 36px;
     margin-bottom: 70px;
   }
 
@@ -578,7 +567,8 @@
     margin: 60px 0;
   }
 
-  .about__title {
+  .about__title,
+  .advantages__title {
     font-size: 20px;
   }
 
@@ -599,10 +589,6 @@
   .advantages__item {
     max-width: 100%;
   }
-
-  .advantages__title {
-    font-size: 19px;
-  }
   
   .conquer__title {
     font-size: 24px;
@@ -617,7 +603,8 @@
     padding-bottom: 70px;
   }
 
-  .gallery__title {
+  .gallery__title,
+  .price__title {
     font-size: 28px;
   }
 
@@ -658,10 +645,6 @@
     padding: 0px 20px;
   }
 
-  .price__title {
-    font-size: 28px;
-  }
-
   .contacts__text {
     font-size: 20px;
   }
@@ -680,7 +663,8 @@
     font-size: 86px;
   }
 
-  .header__link {
+  .header__link,
+  .social__item:not(:last-child) {
     margin: 40px 0;
   }
 
@@ -740,8 +724,4 @@
     margin-bottom: 100px;
   }
 
-  .social__item:not(:last-child) {
-    margin-right: 0px;
-    margin-bottom: 40px;
-  }
 }
