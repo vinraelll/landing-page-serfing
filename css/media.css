@@ -1,6 +1,7 @@
 @media (max-width: 1140px) {
   .conquer {
-    background-size: 100%;
+    background-size: 100% 100%;  
+    /* оставил специально 100-100, так как не растягивался фон */
   }
 
   .conquer__inner {
@@ -663,8 +664,7 @@
     font-size: 86px;
   }
 
-  .header__link,
-  .social__item:not(:last-child) {
+  .header__link {
     margin: 40px 0;
   }
 
@@ -722,6 +722,10 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
+  }
+
+  .social__item:not(:last-child) {
+    margin-bottom: 40px;
   }
 
 }
