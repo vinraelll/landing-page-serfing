@@ -1,7 +1,6 @@
 @media (max-width: 1140px) {
   .conquer {
     background-size: 100% 100%;  
-    /* оставил специально 100-100, так как не растягивался фон */
   }
 
   .conquer__inner {
@@ -30,6 +29,7 @@
 
   .advantages__inner {
     flex-direction: column;
+    align-items: center;
   }
 
   .advantages__items {
@@ -38,10 +38,16 @@
   }
 
   .stats {
-    max-width: 340px;
+    max-width: 320px;
+    padding: 0px 5px;
     flex-basis: 0;
     margin-right: 0;
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .stats__info {
+    justify-content: center;
   }
 
   .stats__item span {
@@ -61,27 +67,29 @@
     font-size: 44px;
   }
 
-  .gallery__inner {
-    justify-content: center;
-    margin-right: 0px;
+  .blockquote {
+    padding: 80px 10px;
+    font-size: 34px;
   }
 
   .gallery__item {
-    max-width: 100%;
     margin-right: 20px;
     margin-bottom: 20px;
   }
 
-  .blockquote {
-    padding: 80px 10px;
-    font-size: 34px;
+  .gallery__item--sm {
+    flex-basis: calc(25% - 20px);
+  }
+  
+  .gallery__item--lg {
+    flex-basis: calc(50% - 20px);
   }
 
   .slider__item {
     padding: 382px 0;
   }
 
-  .slider__title,
+  .slide__title,
   .conquer__title {
     font-size: 42px;
   }
@@ -111,19 +119,19 @@
     justify-content: space-around;
   }
 
-  .price__box {
+  .price__item {
     margin: 0px 15px;
   }
 
-  .price__box:not(:last-child) {
+  .price__item:not(:last-child) {
     margin-bottom: 60px;
   }
 
-  .price__box:hover {
+  .price__item:hover {
     transform: scale(1.0);
   }
 
-  .price__item {
+  .plist__item {
     margin-bottom: 20px;
   }
 
@@ -142,17 +150,21 @@
     position: static;
   }
 
-  .header__logo {
-    left: 10px;
+  .header__nav {
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 
   .menu {
+    height: 100vh;
     position: absolute;
     right: 0;
     left: 0;
     top: 0;
     bottom: 0;
-    padding-bottom: 8px;
     flex-direction: column;
     justify-content: center;
     background-color: teal;
@@ -160,7 +172,7 @@
   }
 
   .menu__item {
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
 
   .menu__link {
@@ -225,11 +237,11 @@
     padding: 340px 0;
   }
 
-  .slider__descr {
+  .slide__descr {
     padding: 0px 10px;
   }
 
-  .slider__title {
+  .slide__title {
     font-size: 36px;
   }
 
@@ -314,7 +326,7 @@
     padding: 320px 0;
   }
 
-  .slider__title {
+  .slide__title {
     font-size: 32px;
   }
 
@@ -355,6 +367,18 @@
   .contacts__text {
     width: 77%;
     padding: 35px 35px;
+  }
+
+  .gallery__inner {
+    margin-right: 0;
+  }
+
+  .gallery__item--sm {
+    flex-basis: calc(50% - 20px);
+  }
+  
+  .gallery__item--lg {
+    flex-basis: calc(100%);
   }
 }
 
@@ -407,7 +431,6 @@
 
   .gallery__btn {
     padding: 10px 40px;
-    border: 2px solid teal;
     border-radius: 7px;
   }
 
@@ -458,12 +481,12 @@
     padding: 300px 0;
   }
 
-  .slider__title {
+  .slide__title {
     font-size: 24px;
     margin-bottom: 10px;
   }
 
-  .slider__subtitle {
+  .slide__subtitle {
     font-size: 12px;
   }
 
@@ -471,7 +494,7 @@
     font-size: 38px;
   }
 
-  .price__box {
+  .price__item {
     min-height: 530px;
   }
 
@@ -491,7 +514,7 @@
   }
 
   .about__title {
-    font-size: 20px;
+    font-size: 36px;
   }
 
   .title::after {
@@ -570,7 +593,7 @@
 
   .about__title,
   .advantages__title {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .title::after {
@@ -631,7 +654,7 @@
     padding: 232px 0;
   }
 
-  .slider__descr {
+  .slide__descr {
     text-align: center;
     left: 0%;
     right: 0%

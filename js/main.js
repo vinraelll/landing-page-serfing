@@ -1,12 +1,21 @@
 $(function(){
 
-  $('.burger').on('click', function(e) {
-    e.preventDefault();
-  
-    $('.burger').toggleClass("active");
-    $('.menu').toggleClass("active");
-  
-  });
+  const burger = document.querySelector('.burger')
+  const menu = document.querySelector('.menu')
+
+  const toggleClasses = () => {
+    burger.classList.toggle('active')
+    menu.classList.toggle('active')
+    document.body.classList.toggle('lockScroll')
+  }
+
+  menu.addEventListener('click', e => {
+    if (e.target.classList.contains('menu__link')) {
+      toggleClasses()
+    }
+  })
+
+  burger.addEventListener('click', toggleClasses)
 
   const anchors = document.querySelectorAll('a[href*="#"]')
 
@@ -27,24 +36,12 @@ $(function(){
 
     responsive: [
       {
-        breakpoint: 769,
+        breakpoint: 401,
         settings: {
           dots: false,
         }
       }]
   });
   
-  $('.burger__btn').on('click', function(){
-    $('.menu').toggleClass('menu--active'),
-    $('body').toggleClass('lockScroll')
-  });
-
-
-  // let menuLinks = document.querySelectorAll('.menu')
-  //   menuLinks.array.forEach(element => {
-      
-  //   });
-  
-
   const mixer = mixitup('.gallery__inner');
 });
